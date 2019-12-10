@@ -5,5 +5,13 @@
         "browsers": ["last 2 Chrome versions"]
       }
     }]
+  ],
+  "plugins": [
+    ["babel-plugin-styled-components", {
+      "ssr": false,
+      "pure": true,
+      "minify": true,
+      "transpileTemplateLiterals": true
+    }]
   ]
 }

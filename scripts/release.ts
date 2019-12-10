@@ -89,14 +89,7 @@ const publishDir = async ({ resolve, outdir, version }: Context) => {
 		publish2git(
 			resolve(outdir),
 			{
-				user: {
-					email: 'tone@re-knock.io',
-					name: 'publisher',
-				},
-				branch: 'release',
-				dotfiles: true,
 				message: `Release v${version}!!`,
-				tag: `v${version}`,
 			},
 			e => (e ? j(e) : r()),
 		),
