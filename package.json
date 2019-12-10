@@ -11,7 +11,7 @@
     "start": "parcel src/index.html",
     "prebuild": "ts-node -P tsconfig.build.json scripts/prebuild.ts",
     "build": "parcel build src/index.html --public-url /practice-20191209-animation-with-react/",
-    "release": "npm run prebuild && npm run build && ts-node scripts/release.ts"
+    "release": "npm run prebuild && npm run build && ts-node -P tsconfig.build.json scripts/release.ts"
   },
   "dependencies": {
     "preact": "10.0.5",
